@@ -1,12 +1,13 @@
 const express=require('express');
 const hbs=require('hbs');
 var app=express();
+const port=process.env.PORT || 3000
 hbs.registerPartials(__dirname+'/viwes/partials');
 app.use(express.static(__dirname+'/public'))
 app.set('view engine','hbs')
 app.use((req,res,next)=>{
   next();
-  
+
     res.render('maintenance',{
         copyright:'kevit technology',
         mono:9624296269
@@ -34,6 +35,6 @@ app.get('/about',(req,res)=>{
 
 
 
-app.listen(1111,()=>{
-    console.log("server are running on 1111 por")
+app.listen(port,()=>{
+    console.log(`server are running on ${port} port`)
 });

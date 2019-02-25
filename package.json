@@ -1,0 +1,29 @@
+{
+  "name": "webserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "start":"node server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.2",
+    "nodemod": "^1.5.19",
+    "nodeman": "^1.1.2",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagarmodhavaniya/webserver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagarmodhavaniya/webserver/issues"
+  },
+  "homepage": "https://github.com/sagarmodhavaniya/webserver#readme"
+}
